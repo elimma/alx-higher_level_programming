@@ -1,5 +1,5 @@
 #include "lists.h"
-#include <stddef.h>
+
 
 
 /**
@@ -8,7 +8,7 @@
  * @number: The number to insert.
  *
  * Return: If the function fails - NULL.
- *         Otherwise - a pointer to the new node.
+ * Otherwise - a pointer to the new node.
  */
 
 
