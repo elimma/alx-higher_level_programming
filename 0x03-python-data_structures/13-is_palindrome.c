@@ -66,12 +66,12 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 
 size_t listint_len(const listint_t *h)
 {
-	int leng  = 0;
+	int lenght  = 0;
 
 	while (h != NULL)
 	{
-		++leng;
+		++lenght;
 		h = h->next;
 	}
-	return (leng);
+	return (lenght);
 }
