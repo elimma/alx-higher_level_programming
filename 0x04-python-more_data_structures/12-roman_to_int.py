@@ -13,12 +13,12 @@ def roman_to_int(roman_string):
             "M": 1000
     }
     number = 0
-     for i in range(len(roman_string)):
-         if roman_dict.get(roman_string[i], 0) == 0:
-             return (0)
-         if (i != (len(roman_string) - 1) and
-                 roman_dict[roman_string[i]] < roman_dict[roman_string[i + 1]]):
-                 number += roman_dict[roman_string[i]] * -1
-         else:
-             number += roman_dict[roman_string[i]]
+    for i in range(len(roman_string)):
+        if roman_dict.get(roman_string[i], 0) == 0:
+            return (0)
+        if (i != (len(roman_string) - 1) and
+                roman_dict[roman_string[i]] < roman_dict[roman_string[i + 1]]):
+                number += roman_dict[roman_string[i]] * -1
+        else:
+            number += roman_dict[roman_string[i]]
     return (number)
